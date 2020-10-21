@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>FootBall</title>
+  <meta name="description" content="Aplikasi Informasi tentang sepakbola" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/materialize.css" />
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+  <nav class="deep-orange accent-3 lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo center" id="logo-container">La Liga</a>
+      <a href="#" class="sidenav-trigger" data-target="nav-mobile" id=back-button>
+        <i class="material-icons">arrow_back</i>
+      </a>
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+    </div>
+  </nav>
+
+  <div class="container" id="body-content">
+    <div class="progress deep-orange accent-3">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+  <div class="container" id="body-next-match"></div>
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red" id="favorite">
+      <i class="large material-icons">save</i>
+    </a>
+  </div>
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red" id="delete">
+      <i class="large material-icons">delete</i>
+    </a>
+  </div>
+
+  <script src="../js/materialize.js"></script>
+  <script src="../src/js/idb.js"></script>
+  <script src="../src/js/db.js"></script>
+  <script src="../src/js/api.js"></script>
+  <script src="../src/detail.js"></script>
+</body>
+
+</html>
